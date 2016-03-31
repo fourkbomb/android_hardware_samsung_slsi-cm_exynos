@@ -16,7 +16,7 @@
 
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
-
+ifneq ($(TARGET_SOC),exynos4210)
 ifeq ($(BOARD_USES_SKIA_FIMGAPI),true)
 LOCAL_MODULE_TAGS := optional
 
@@ -39,4 +39,5 @@ LOCAL_MODULE:= libfimg
 
 include $(BUILD_SHARED_LIBRARY)
 
+endif
 endif
