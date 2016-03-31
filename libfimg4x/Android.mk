@@ -22,7 +22,7 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES:= \
 	FimgApi.cpp   \
-	FimgExynos5.cpp
+	FimgExynos.cpp
 
 LOCAL_C_INCLUDES += \
 	$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include \
